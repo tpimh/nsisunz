@@ -19,7 +19,7 @@ jobs:
       BUILD_TARGET_ARCH: ${{ matrix.architecture }}
     
     name: '${{matrix.architecture}} [${{matrix.compiler}}]'
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v2
