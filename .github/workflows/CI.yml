@@ -125,7 +125,7 @@ jobs:
         cmd /c 7z a "nsisunz-$($env:BUILD_DESC).zip" "${{github.workspace}}\install\*"
     
     - name: Upload Artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       if: success()
       with:
         name: nsisunz_win_${{matrix.architecture}}
